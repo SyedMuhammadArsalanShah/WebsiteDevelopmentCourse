@@ -9,46 +9,82 @@
 </head>
 
 <body>
-
-   <!---- <p id="demo">Good Evening!</p>
-
-    <script>
-    if (new Date().getHours() < 18) {
-      document.getElementById("demo").innerHTML = "Good day!";
-    }
-    </script>
-
-<p id="demo"></p>
-
-<script>
-const hour = new Date().getHours(); 
-let greeting;
-
-if (hour < 18) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
-
-document.getElementById("demo").innerHTML = greeting;
-</script> --->
-
-
-<p id="demo"></p>
-
-<script>
-const time = new Date().getHours();
-let greeting;
-if (time < 10) {
-  greeting = "Good morning";
-} else if (time < 20) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
-document.getElementById("demo").innerHTML = greeting;
-</script>
+  
+  <form action="#">
+    <label for="myname"> Name</label>
+     <input type="text"  id="myname" >
+     <br>
+     <br>
+     <label for="myemail"> Email</label>
+     <input type="email" name="" id="myemail">
+     <br>
+     <br>
+     <label for="mypass">  Password</label>
+     <input type="password" name="" id="mypass">
+      <br>
+      <br>
+      <label for="mynum">  Number</label>
+      <input type="number" name="" id="mynum">
     
+     <br>
+     <br>
+     <label for="mycolor">  color </label>
+     <input type="color" name="" id="mycolor">
+     <br>
+     <br>
+     <label for="mydate"> Date </label>
+     <input type="date" name="" id="">
+     <br>
+     <br>
+     <label for="week">week </label>
+    <input type="week" name=""id="week">
+     <br>
+     <br>
+     <label for="month">month</label>
+     <input type="month" name=""id="month">
+    <br>
+    <br>
+    <label for="male">gender male</label>
+      <input type="radio" name="gender"id="male" >
+      <label for="female"> female</label>
+      <input type="radio" name="gender" id="female">
+    <br>
+    <br>
+    <label for="text">Address</label><br>
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+    <select name="" id="">
+    
+    <option value="Morning">Turkey</option>
+    <option value="Afternoon">Canada</option>
+    <option value="Evening" selected >Pakistan</option>
+    
+    </select>
+    <br>
+    <br>
+    <label for="check">Are you eligible for this  </label>
+    <input type="checkbox" name="" id="check" checked>
+    <br>
+    <br>
+    <label for="file">choose your profile </label>
+    <input type="file" name="" id="file">
+    
+    <br>
+    <br>
+    <label for="range">choose your range </label>
+    <input type="range" name="" id="range" max="100" min="10">
+    
+    <br>
+    <br>
+     <input type="reset" value="reset now">
+     <input type="submit" value="submit now ">
+    
+    
+    
+    
+    
+    </form>
 </body>
 
 </html>
